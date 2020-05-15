@@ -3,7 +3,7 @@ export const tasks = [
       "_id": "5ebef97f592cfa6f7aa1ee95",
       "isDone": false,
       "icon": "http://placehold.it/32x32",
-      "text": "ikjdwjkh"
+      "text": "ikjdwjkh ikjdwjkh"
     },
     {
       "_id": "5ebef97f9211b30f8df4d702",

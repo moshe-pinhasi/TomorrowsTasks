@@ -1,10 +1,9 @@
 
 import {StyleSheet} from 'react-native'
-import Colors from '../../config/colors'
+import Colors from '../../../config/colors'
 
 
 const styles = StyleSheet.create({
-
   dashContainer: {
     flexDirection: 'column',
   },

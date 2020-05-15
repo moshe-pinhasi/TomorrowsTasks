@@ -1,11 +1,10 @@
 import React from 'react'
 import {View, Text} from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context';
+// import { SafeAreaView } from 'react-native-safe-area-context';
 
 import {HeaderCmp} from '../../cmps/HeaderCmp'
-import {BodyCmp} from '../../cmps/BodyCmp'
-import {TasksList} from '../../cmps/TasksList'
-
+// import {BodyCmp} from '../../cmps/BodyCmp'
+import {Stepper} from '../../cmps/Stepper'
 
 import {tasks} from '../../config/data'
 
@@ -18,7 +17,7 @@ const HomeScreen = () => {
           </View>
         </HeaderCmp>
         {/* <BodyCmp /> */}
-        <TasksList tasks={tasks}/>
+        <Stepper tasks={tasks} title={"Today's Tasks"} />
       </>
     );
   }

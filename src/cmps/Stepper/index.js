@@ -1,7 +1,7 @@
-import TasksList from './TasksList'
+import Stepper from './Stepper'
 import styles from './styles'
 
 export {
-    TasksList,
+    Stepper,
     styles
 }
