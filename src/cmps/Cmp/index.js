@@ -1,7 +1,7 @@
-import BodyCmp from './BodyCmp'
+import Cmp from './Cmp'
 import styles from './styles'
 
 export {
-    BodyCmp,
+    Cmp,
     styles
 }
