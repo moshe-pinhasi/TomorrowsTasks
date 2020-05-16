@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 // import {HomeScreen, NewListScreen, SettingsScreen} from './router/tabs.js'
 import {HomeScreen} from './screens/HomeScreen'
 import {SettingsScreen} from './screens/SettingsScreen'
-import {NewListScreen} from './screens/NewListScreen'
+import {TasksListsScreen} from './screens/TasksListsScreen'
 
 import Colors from './config/colors'
 
@@ -34,7 +34,7 @@ const App = () => {
 
           <Tab.Screen 
             name="New" 
-            component={NewListScreen} 
+            component={TasksListsScreen} 
             options={{
               // tabBarLabel:() => {return null},
               tabBarLabel: 'New',

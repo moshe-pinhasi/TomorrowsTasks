@@ -7,11 +7,9 @@ const window = Dimensions.get('window');
 const styles = StyleSheet.create({
   headerView: {
     backgroundColor: Colors.primary,
-    paddingVertical: 80,
+    paddingTop: 80,
     paddingHorizontal: 10,
     height: window.width / 1.5,
-    borderBottomLeftRadius: 30,
-    borderBottomRightRadius: 30,
   },
 });
 
