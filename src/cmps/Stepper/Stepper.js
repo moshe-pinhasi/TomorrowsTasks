@@ -6,16 +6,11 @@ import ProgressCircle from 'react-native-progress-circle'
 import styles from './styles';
 import Colors from '../../config/colors'
 
-const Stepper = ({tasks, title}) => {
+const Stepper = ({tasks, title, onItemPress}) => {
 
   const percentage = (tasks) => {
-    const doneCount =tasks.filter(i => i.isDone).length
-    return doneCount * 100 / tasks.length
-  }
-  
-
-  const toggleDone = () => {
-
+    const doneCount = tasks.filter(i => i.isDone).length
+    return parseInt(doneCount * 100 / tasks.length)
   }
 
   return (
@@ -25,7 +20,7 @@ const Stepper = ({tasks, title}) => {
         <View style={styles.progressContainer}>
           <View style={styles.progress}>
             <ProgressCircle
-              percent={30}
+              percent={percentage(tasks)}
               radius={20}
               borderWidth={2}
               color={Colors.primary}
@@ -43,7 +38,7 @@ const Stepper = ({tasks, title}) => {
           <StepItem 
             task={item} 
             lastChild={index === tasks.length-1}
-            // onPress={toggleDone}
+            onPress={() => onItemPress(item)}
             />
         }
         keyExtractor={(item, index) => index}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {View, Text} from 'react-native'
 
 import {HeaderCmp} from '../../cmps/HeaderCmp'
@@ -7,7 +7,18 @@ import {UserPreview} from '../../cmps/UserPreview'
 
 import {tasks} from '../../config/data'
 
-const HomeScreen = () => {
+class HomeScreen extends Component {
+
+  state = {tasks}
+  
+  toggleDone = (step) => {
+    const index = this.state.tasks.findIndex(s => step._id === s._id)
+    if (index === -1) return
+    this.state.tasks[index].isDone = !step.isDone
+    this.setState({tasks: this.state.tasks})
+  }
+
+  render (){
     return (
       <>
         <HeaderCmp>
@@ -15,9 +26,13 @@ const HomeScreen = () => {
             <UserPreview />
           </View>
         </HeaderCmp>
-        <Stepper tasks={tasks} title={"Today's Tasks"} />
+        <Stepper 
+          tasks={this.state.tasks} 
+          title={"Today's Tasks"}
+          onItemPress={this.toggleDone} />
       </>
     );
   }
+}
 
 export default HomeScreen

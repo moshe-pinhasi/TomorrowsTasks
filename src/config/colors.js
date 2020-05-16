@@ -14,5 +14,6 @@ export default {
     primeryLighter: "#b3c6cb",
     green1: "#0f3d2a",
     white: '#ffffff',
+    rowUnderlay: 'transparent',
   };
 

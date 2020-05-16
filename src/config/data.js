@@ -28,5 +28,11 @@ export const tasks = [
       "isDone": false,
       "icon": "http://placehold.it/32x32",
       "text": "duis"
+    },
+    {
+      "_id": "5ebef97fe0fb6ba295a3e2b8",
+      "isDone": false,
+      "icon": "http://placehold.it/32x32",
+      "text": "duis8"
     }
   ]
