@@ -4,7 +4,7 @@ import Colors from '../../config/colors'
 
 const styles = StyleSheet.create({
     title: {
-        marginBottom: 20,
+        marginBottom: 15,
     },
     today: {
         color: Colors.white,

@@ -4,7 +4,7 @@ import Colors from '../../config/colors'
 
 const styles = StyleSheet.create({
     dayBoxView: {
-        width: 100,
+        width: 90,
         padding: 20,
         backgroundColor: Colors.primeryLight,
         borderTopLeftRadius: 15,
@@ -14,13 +14,19 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
     dayMonth: {
-        fontSize: 24,
+        fontSize: 18,
         color: Colors.white,
         marginBottom: 5
     },
     dayWeek: {
-        fontSize: 24,
+        fontSize: 18,
         color: Colors.white,
+    },
+    selectedBackground: {
+        backgroundColor: Colors.white
+    },
+    selectedText: {
+        color: Colors.primary
     }
 });
 

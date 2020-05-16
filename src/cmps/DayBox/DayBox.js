@@ -1,15 +1,20 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {View, Text, TouchableHighlight} from 'react-native'
 import {getDayOfWeek, getDayOfMonth} from '../../helpers/dates';
+import Colors from '../../config/colors'
 
 import styles from './styles';
 
-const DayBox = ({date}) => {
+const DayBox = ({date, onPress, isSelected}) => {
   return (
-    <View style={styles.dayBoxView}>
-      <Text style={styles.dayMonth}>{getDayOfMonth(date)}</Text>
-      <Text style={styles.dayWeek}>{getDayOfWeek(date)}</Text>
-    </View>
+    <TouchableHighlight
+      onPress={onPress}
+      underlayColor={Colors.rowUnderlay}>
+        <View style={[styles.dayBoxView, isSelected && styles.selectedBackground]}>
+          <Text style={[styles.dayMonth, isSelected && styles.selectedText]}>{getDayOfMonth(date)}</Text>
+          <Text style={[styles.dayWeek, , isSelected && styles.selectedText]}>{getDayOfWeek(date)}</Text>
+        </View>
+    </TouchableHighlight>
   );
 }
 

@@ -3,13 +3,13 @@ import Colors from '../../config/colors'
 
 const styles = StyleSheet.create({
     stepperView: {
-        backgroundColor: Colors.white,
-        flex: 1,
-        marginTop: -70,
-        borderTopLeftRadius: 50,
-        borderTopRightRadius: 50,
-        paddingHorizontal: 20,
-        paddingTop: 50
+        // backgroundColor: Colors.white,
+        // flex: 1,
+        // marginTop: -70,
+        // borderTopLeftRadius: 50,
+        // borderTopRightRadius: 50,
+        // paddingHorizontal: 20,
+        // paddingTop: 50
     },
     header: {
         marginBottom: 10,
