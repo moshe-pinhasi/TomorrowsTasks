@@ -6,13 +6,14 @@ import {Dash} from '../Dash'
 import styles from './styles';
 import Colors from '../../../config/colors'
 
-const StepItem = ({task, lastChild, onPress}) => {
+const StepItem = ({task, lastChild, onPress, disabled}) => {
   const icon = task.isDone ? 'ios-checkmark-circle' : 'ios-radio-button-off'
   const color = task.isDone ? Colors.primary : Colors.grey1
 
   return (
     <TouchableHighlight
       onPress={onPress}
+      disabled={disabled}
       underlayColor={Colors.rowUnderlay}>
       <View style={styles.stepView}>
         <View style={styles.col}>
