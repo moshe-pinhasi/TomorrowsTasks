@@ -1,3 +1,4 @@
+A "todo" app using react native project
 
 Ionicons
 https://oblador.github.io/react-native-vector-icons/
